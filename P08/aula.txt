@@ -1,0 +1,22 @@
+xxgdb
+gdb debugger
+valgrind > interseta todas as leituras e escritas de memoria
+
+(gdb) run
+>deu erro num val i
+    >fazer (gdb) print i
+
+exercicio dos primos:
+Segmentation fault -> estava com bad malloc
+    mas mesmo assim detetou 4 erros com o valgrind
+    off by one; estamos a alocar memoria e depois estamos a usar 1 ao lado
+
+int *p=malloc(....)
+........
+.....
+free(p);
+>>>p=NULL; >>>Assim vai dar Segmentation fault
+....
+int *q=malloc(....);
+........
+p[3]=7; >Ja libertamos a memoria mas voltamos a usar o ponteiro *p //Use after free
