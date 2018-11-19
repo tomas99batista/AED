@@ -1,13 +1,1 @@
-/*
-** Tomás Oliveira e Silva, AED, September 2014, September 2017
-**
-** my first C program
-*/
-
-#include <stdio.h>
-
-int main(void)
-{
-  puts("Hello Tomas!");
-  return 0;
-}
+./1.txt ./README.md ./SOp1819_trabalho1.pdf ./teste.sh ./totalspace.sh
