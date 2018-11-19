@@ -1,1 +1,4 @@
-./1.txt ./README.md ./SOp1819_trabalho1.pdf ./teste.sh ./totalspace.sh
+int a[10];
+*b = &a[7];
+
+b[-4];
