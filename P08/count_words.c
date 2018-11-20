@@ -84,12 +84,12 @@ static void free_tree(node *n)
 // Ordered binary tree query (recursive) functions
 //
 
-static long count_all_words(node *n)    //conta todos os nos
+static long count_all_words(node *n)  
 {
   return (n == NULL) ? 0 : count_all_words(n->left) + n->count + count_all_words(n->right);
 }
 
-static long count_different_words(node *n)
+static long count_different_words(node *n)    //conta os nos
 {
   return (n == NULL) ? 0 : count_different_words(n->left) + 1 + count_different_words(n->right);
 }
