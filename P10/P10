@@ -1,0 +1,14 @@
+Desafio (simples) para a aula prática de hoje:
+
+Num quadrado de (N+1)x(N+1) calcule o número de maneiras de ir da posição (0,0) até à posição (N,N) quando são apenas permitidos os movimentos
+
+(x,y) -> (x+1,y),
+(x,y) -> (x,y+1),
+(x,y) -> (x+1,y+2), e
+(x,y) -> (x+2,y+1).
+Para ir até N=26, use o tipo de dados unsigned long.
+
+Para ir até N=52, use o tipo de dados unsigned __int128. (Dá mais trabalho imprimir números deste tipo...)
+
+Como é que o número de caminhos cresce em função de N?
+
